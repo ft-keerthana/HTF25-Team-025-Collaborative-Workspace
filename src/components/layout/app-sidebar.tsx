@@ -6,7 +6,6 @@ import {
   LayoutGrid,
   Calendar,
   FileText,
-  BarChart2,
   Settings,
   Briefcase,
   Github,
@@ -32,7 +31,6 @@ const navItems = [
   { href: '/dashboard/calendar', icon: Calendar, label: 'Calendar' },
   { href: '/dashboard/repositories', icon: Github, label: 'Repositories' },
   { href: '/dashboard/documents', icon: FileText, label: 'Documents' },
-  { href: '/dashboard/reports', icon: BarChart2, label: 'Reports' },
 ];
 
 const adminNavItem = {
