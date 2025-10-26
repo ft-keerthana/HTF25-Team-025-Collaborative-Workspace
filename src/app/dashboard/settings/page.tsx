@@ -91,10 +91,10 @@ export default function SettingsPage() {
             <Avatar className="h-16 w-16">
               <AvatarFallback>{user.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
             </Avatar>
-            <div>
-              <Button>Change Photo</Button>
-              <p className="text-sm text-muted-foreground mt-2">
-                JPG, GIF or PNG. 1MB max.
+             <div>
+              <p className="font-semibold">{user.displayName}</p>
+              <p className="text-sm text-muted-foreground">
+                {user.email}
               </p>
             </div>
           </div>

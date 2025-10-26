@@ -2,14 +2,6 @@
 'use client';
 import { Timestamp } from 'firebase/firestore';
 
-export type User = {
-  id: string;
-  name: string;
-  avatarUrl: string;
-  initials: string;
-  role: string;
-};
-
 export type UserProfile = {
   uid: string;
   email?: string | null;
