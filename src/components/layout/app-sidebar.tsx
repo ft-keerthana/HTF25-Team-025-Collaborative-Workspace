@@ -11,6 +11,7 @@ import {
   Github,
   Users,
   Shield,
+  AreaChart,
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -31,6 +32,7 @@ const navItems = [
   { href: '/dashboard/calendar', icon: Calendar, label: 'Calendar' },
   { href: '/dashboard/repositories', icon: Github, label: 'Repositories' },
   { href: '/dashboard/documents', icon: FileText, label: 'Documents' },
+  { href: '/dashboard/reports', icon: AreaChart, label: 'Reports' },
 ];
 
 const adminNavItem = {
