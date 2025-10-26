@@ -1,3 +1,4 @@
+
 'use client';
 import { Timestamp } from 'firebase/firestore';
 
@@ -20,10 +21,10 @@ export type UserProfile = {
 export type TaskStatus = 'To Do' | 'In Progress' | 'Done';
 
 export type Comment = {
-  id: string;
-  user: User; // Will be migrated to UserProfile later
+  uid: string;
+  user: UserProfile;
   comment: string;
-  timestamp: string;
+  timestamp: Timestamp;
 };
 
 export type Task = {
