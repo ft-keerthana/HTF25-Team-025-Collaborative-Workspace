@@ -35,7 +35,7 @@ const AdminDashboard: React.FC = () => {
       { name: 'In Progress', count: statusCounts['In Progress'] || 0 },
       { name: 'Done', count: statusCounts['Done'] || 0 },
     ];
-  }, [mockTasks]);
+  }, []);
 
   const userRoleData = useMemo(() => {
     if (!mockUsers) return [];
@@ -50,7 +50,7 @@ const AdminDashboard: React.FC = () => {
       name,
       value,
     }));
-  }, [mockUsers]);
+  }, []);
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
