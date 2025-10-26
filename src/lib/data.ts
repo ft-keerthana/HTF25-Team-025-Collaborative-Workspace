@@ -27,6 +27,24 @@ export const users: UserProfile[] = [
     role: 'Viewer',
     email: 'diana@example.com',
   },
+  {
+    uid: '5',
+    displayName: 'cosc',
+    role: 'Mentor',
+    email: 'cosc@example.com',
+  },
+  {
+    uid: '6',
+    displayName: 'A',
+    role: 'Team Member',
+    email: 'a@example.com',
+  },
+  {
+    uid: '7',
+    displayName: 'B',
+    role: 'Team Member',
+    email: 'b@example.com',
+  },
 ];
 
 export const tasks: Task[] = [
