@@ -91,7 +91,7 @@ export function AppSidebar() {
           </nav>
         </div>
         <div className="mt-auto p-4 border-t">
-          <p className="text-xs text-muted-foreground text-center">© 2024 CollabVerse</p>
+          <p className="text-xs text-muted-foreground text-center">© 2025 CollabVerse</p>
         </div>
       </div>
     </aside>
