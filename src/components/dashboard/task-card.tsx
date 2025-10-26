@@ -2,9 +2,9 @@
 'use client';
 
 import { GitPullRequest, MessageSquare } from 'lucide-react';
-import type { Task } from '@/lib/types';
+import type { Task, UserProfile } from '@/lib/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import {
   Tooltip,
@@ -15,12 +15,11 @@ import {
 import { TaskDetailDialog } from './task-detail-dialog';
 import { useState } from 'react';
 
-const AssigneeAvatar = ({ user }: { user: { photoURL?: string | null, displayName?: string | null } }) => (
+const AssigneeAvatar = ({ user }: { user: UserProfile }) => (
   <TooltipProvider>
     <Tooltip>
       <TooltipTrigger>
         <Avatar className="h-8 w-8 border-2 border-card">
-          <AvatarImage src={user.photoURL ?? undefined} />
           <AvatarFallback>{user.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
         </Avatar>
       </TooltipTrigger>

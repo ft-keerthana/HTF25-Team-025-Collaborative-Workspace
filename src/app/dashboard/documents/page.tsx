@@ -13,7 +13,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { formatDistanceToNow } from 'date-fns';
 import Link from 'next/link';
 import { FileText } from 'lucide-react';
@@ -37,7 +37,6 @@ function DocumentRow({ document }: { document: ProjectDocument }) {
                 {loading ? <Skeleton className="h-8 w-24" /> : (
                 <div className="flex items-center gap-2">
                     <Avatar className="h-8 w-8">
-                        <AvatarImage src={owner?.photoURL ?? undefined} alt={owner?.displayName ?? ''} />
                         <AvatarFallback>{owner?.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
                     </Avatar>
                     <span>{owner?.displayName}</span>

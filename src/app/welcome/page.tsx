@@ -52,7 +52,6 @@ export default function WelcomePage() {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
-      photoURL: user.photoURL,
       role: selectedRole,
     };
 

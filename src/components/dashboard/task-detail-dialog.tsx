@@ -12,7 +12,7 @@ import {
   DialogFooter,
 } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { ScrollArea } from '../ui/scroll-area';
@@ -32,7 +32,6 @@ function CommentEntry({ comment }: { comment: Comment }) {
   return (
     <div className="flex items-start gap-4">
       <Avatar className="h-9 w-9">
-        <AvatarImage src={comment.user.photoURL ?? ''} />
         <AvatarFallback>{comment.user.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
       </Avatar>
       <div className="flex-1">
@@ -111,7 +110,6 @@ export function TaskDetailDialog({ task, open, onOpenChange, children }: TaskDet
                 <div className="space-y-4">
                     <div className="flex items-start gap-4">
                          <Avatar className="h-9 w-9">
-                            <AvatarImage src={currentUser.photoURL ?? ''} />
                             <AvatarFallback>{currentUser.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
                         </Avatar>
                         <div className="flex-1 space-y-2">

@@ -24,7 +24,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { GitFork, Star, Search, PlusCircle } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { AddRepositoryDialog } from '@/components/dashboard/add-repository-dialog';
@@ -61,7 +61,6 @@ function RepositoryRow({ repository }: { repository: Repository }) {
                 {loading ? <Skeleton className="h-8 w-24" /> : (
                 <div className="flex items-center gap-2">
                     <Avatar className="h-8 w-8">
-                    <AvatarImage src={owner?.photoURL ?? undefined} alt={owner?.displayName ?? ''} />
                     <AvatarFallback>{owner?.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
                     </Avatar>
                     <span>{owner?.displayName}</span>

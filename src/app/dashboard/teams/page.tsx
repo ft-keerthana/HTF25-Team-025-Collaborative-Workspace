@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Flame, MessageCircle, Star, UserPlus } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
@@ -93,7 +93,6 @@ export default function TeamsPage() {
               <Card key={user.uid} className="flex flex-col">
                 <CardContent className="flex flex-col items-center p-6 text-center">
                   <Avatar className="h-20 w-20 mb-4">
-                    <AvatarImage src={user.photoURL ?? ''} alt={user.displayName ?? ''} />
                     <AvatarFallback>{user.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
                   </Avatar>
                   <h3 className="text-lg font-semibold">{user.displayName}</h3>
