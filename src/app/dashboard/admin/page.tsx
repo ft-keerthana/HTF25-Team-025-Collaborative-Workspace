@@ -1,7 +1,7 @@
 'use client';
 
-import { DynamicAdminDashboard } from '@/components/dashboard/dynamic-admin-dashboard';
+import AdminDashboard from '@/components/dashboard/admin-dashboard';
 
 export default function AdminPage() {
-  return <DynamicAdminDashboard />;
+  return <AdminDashboard />;
 }

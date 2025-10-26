@@ -5,7 +5,12 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 const AdminDashboard = dynamic(() => import('./admin-dashboard'), {
   ssr: false,
-  loading: () => <Skeleton className="w-full h-[600px]" />,
+  loading: () => (
+    <div className="grid gap-6 md:grid-cols-2">
+      <Skeleton className="h-[400px] w-full" />
+      <Skeleton className="h-[400px] w-full" />
+    </div>
+  ),
 });
 
 export function DynamicAdminDashboard() {
