@@ -109,6 +109,76 @@ export const tasks: Task[] = [
             role: 'Viewer',
         }
     ],
+  },
+  {
+    uid: 't7',
+    title: 'Implement User Profile Page',
+    description: 'Create a new page where users can view and edit their profile information.',
+    status: 'To Do',
+    ownerUid: '1',
+    assignees: [
+        {
+            uid: '1',
+            displayName: 'Alice Johnson',
+            role: 'Project Manager',
+        }
+    ],
+  },
+  {
+    uid: 't8',
+    title: 'Refactor Authentication Flow',
+    description: 'Improve the login and registration process for better user experience.',
+    status: 'To Do',
+    ownerUid: '2',
+    assignees: [
+        {
+            uid: '2',
+            displayName: 'Bob Williams',
+            role: 'Team Member',
+        }
+    ],
+  },
+  {
+    uid: 't9',
+    title: 'Integrate with a third-party analytics service',
+    description: 'Add analytics to track user engagement and feature usage.',
+    status: 'In Progress',
+    ownerUid: '1',
+    assignees: [
+        {
+            uid: '1',
+            displayName: 'Alice Johnson',
+            role: 'Project Manager',
+        }
+    ],
+  },
+  {
+    uid: 't10',
+    title: 'Fix responsiveness issues on the dashboard',
+    description: 'Ensure the dashboard layout is fully responsive on mobile and tablet devices.',
+    status: 'In Progress',
+    ownerUid: '2',
+    assignees: [
+        {
+            uid: '2',
+            displayName: 'Bob Williams',
+            role: 'Team Member',
+        }
+    ],
+  },
+  {
+    uid: 't11',
+    title: 'Update UI Kit to latest version',
+    description: 'Upgrade ShadCN and other UI dependencies to their latest versions.',
+    status: 'Done',
+    ownerUid: '3',
+    assignees: [
+        {
+            uid: '3',
+            displayName: 'Charlie Brown',
+            role: 'Mentor',
+        }
+    ],
   }
 ];
 
